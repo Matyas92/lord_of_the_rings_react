@@ -28,7 +28,6 @@ const Quotes = () => {
         fetchData();
       }, []);
 
-
     const fetchData = async () => {
       
       const headers = {
@@ -55,7 +54,6 @@ const Quotes = () => {
     </Button>
     <div className='wrapper'>
   
-
     <blockquote>{quote}</blockquote>
 <cite>{character} </cite>
     

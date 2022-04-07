@@ -16,11 +16,12 @@ const bull = (
 );
 
 export default function BasicCard() {
-
+    //Use API from site the-one-api and load the datas from it using authorization
     const [books, setBooks] = useState([])
 
     useEffect(() => {
 const headers = {
+  //In normal case we dont show the auth keys
 'Accept': 'application/json',
 'Authorization': 'Bearer BfMQ3HhYOrlhdvasiw-T'
 }

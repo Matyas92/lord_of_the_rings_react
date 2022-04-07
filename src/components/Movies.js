@@ -1,12 +1,8 @@
 import React, {useState, useEffect} from "react"
-
 import { DataGrid } from '@mui/x-data-grid';
 
-
 const Movies = () => {
-
     const [movies, setMovies] = useState([])
-
       useEffect(() => {
 const headers = {
   'Accept': 'application/json',
@@ -23,7 +19,6 @@ const fetchData = async () => {
 fetchData();
 }, []);
 
-
 const columns = [
   { field: '_id', headerName: 'ID', width: 100, hide:true },
   { field: 'name', headerName: 'Name', width: 250 },
@@ -38,12 +33,9 @@ const columns = [
 const rows = []
   movies.map((movie,id) => (
   rows.push(movie)
-
 ))
 
-
     console.log(rows)
-
 
 return (
 <div style={{ height: 400, width: 1200 }}>
