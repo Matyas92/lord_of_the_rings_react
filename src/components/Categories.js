@@ -10,6 +10,8 @@ import Chapters from './Chapters';
 import Characters from './Characters';
 import Quotes from './Quotes';
 
+
+//MUI component here as TabPanel
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
